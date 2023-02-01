@@ -76,17 +76,17 @@ try {
 
 const main = async () => {
 const fromWalletKeyPair = await connectToWallet(
-  "2Vzk5f3qFBS1gNQzLsxYudADB1kX2debRHeWjeoTLyBPVQTqaF8CvwTkjSLJYeq5SxAfeorX2MXgACPxuJry113A"
+  "sXSBb8vfT7gdreDZrNEjsQBLLLabmUXQLfTjzjTtaeRvkj2aA7eiCDP2NBwa5ok78cBWhpzeoCo2fWDfiFvyZBk"
 );
 const toWalletKeyPair = await connectToWallet(
-  "sXSBb8vfT7gdreDZrNEjsQBLLLabmUXQLfTjzjTtaeRvkj2aA7eiCDP2NBwa5ok78cBWhpzeoCo2fWDfiFvyZBk"
+  "5p6ba8S4WMho1hipmTR8zt42srqTs2uxLCV7cGg4jKUhYmx4g3bezgDsDFFJKrERP2tfD8ChrrTz7STkFX5FKx6G"
 );
 await transferSol(fromWalletKeyPair, toWalletKeyPair);
 };
 
 main()
 .then(() => {
-  console.log("Program run successfully");
+  console.log("Transaction is a success");
 })
 .catch((e) => {
   console.log(e);
